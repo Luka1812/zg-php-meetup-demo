@@ -45,15 +45,15 @@ class TestWorkerCommand
      */
     public function handle() : void
     {
-        // TODO: log start message.
+        // TODO: Do something.
 
         try {
             $this->testWorkerService->handle();
         } catch (Exception $exception) {
-            // TODO: Log exception message.
+            // TODO: Log exception message (to file, database, send message to email/slack).
         }
 
-        // TODO: log end message.
+        // TODO: Do something else.
 
         return;
     }
