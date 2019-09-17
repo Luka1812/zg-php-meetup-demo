@@ -2,7 +2,7 @@
 
 namespace App\Console\Commands\Test;
 
-use App\Services\OneView\TestWorkerService;
+use App\Services\AMQP\TestWorkerService;
 use Exception;
 
 class TestWorkerCommand
@@ -42,6 +42,7 @@ class TestWorkerCommand
      * Execute the console command.
      *
      * @return void
+     * @throws \Throwable
      */
     public function handle() : void
     {

@@ -25,7 +25,7 @@ class TestWorkerService
     }
 
     /**
-     * Process the message
+     * Consume message
      *
      * @throws \Throwable
      */

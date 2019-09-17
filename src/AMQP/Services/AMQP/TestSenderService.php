@@ -28,15 +28,15 @@ class TestSenderService
     }
 
     /**
-     * Notify process engine
+     * Send message
      *
-     * @param \App\Mapper\Mapper $mapper
+     * @param array $data
      *
      * @return void
      *
      * @throws \Throwable
      */
-    public function handle(Mapper $mapper): void
+    public function handle(array $data): void
     {
         $AMQPService = new AMQPService();
         $AMQPService->setQueueName("TEST");
@@ -45,7 +45,7 @@ class TestSenderService
         $AMQPService->setConsumerTag("TEST");
         $AMQPService->open();
 
-        $AMQPService->send($this->testSendService, $mapper->toArray());
+        $AMQPService->send($this->testSendService, $data);
 
         $AMQPService->closeChannel();
         $AMQPService->closeConnection();
