@@ -210,8 +210,7 @@ class AMQPService
 
         try {
             $results = $service->process($payload);
-        } catch (Exception $exception)
-        {
+        } catch (Exception $exception) {
             throw new AMQPException(AMQPErrorCode::ERR_SERVICE_PROCESSING_FAILED);
         }
 
