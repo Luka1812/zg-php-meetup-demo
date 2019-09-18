@@ -11,14 +11,14 @@ use App\Exceptions\NotFoundException;
 use App\Enums\Entities\MessageLogStatus;
 use App\Enums\Entities\NextpertiseOrderStatus;
 
-class TestServiceTest extends TestCase
+class TestSenderServiceTest extends TestCase
 {
     /**
      * The API endpoint to test
      *
      * @var string
      */
-    protected $endpoint = '/api/test-endpoint';
+    protected $endpoint = '/api/test-sender-service';
 
     /**
      * TestConsumeService instance
