@@ -2,7 +2,7 @@
 
 namespace App\Services\Business;
 
-use App\Support\AMQP\AMQPConsumeMessageInterface;
+use App\AMQP\Common\AMQPConsumeMessageInterface;
 use PhpAmqpLib\Message\AMQPMessage;
 
 class TestConsumeService implements AMQPConsumeMessageInterface

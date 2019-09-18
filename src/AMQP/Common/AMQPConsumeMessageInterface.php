@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Support\AMQP;
+namespace App\AMQP\Common;
 
 use PhpAmqpLib\Message\AMQPMessage;
 

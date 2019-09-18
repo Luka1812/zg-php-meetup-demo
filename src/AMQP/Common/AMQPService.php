@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Support\AMQP;
+namespace App\AMQP\Common;
 
 use PhpAmqpLib\Connection\AMQPStreamConnection;
 use PhpAmqpLib\Exchange\AMQPExchangeType;
@@ -136,7 +136,7 @@ class AMQPService
     }
 
     /**
-     * Init the AMQP process, start connection, open the channel, declare queue and exchange type
+     * Init the Common process, start connection, open the channel, declare queue and exchange type
      *
      * @return void
      *
@@ -178,7 +178,7 @@ class AMQPService
     }
 
     /*
-     * Open AMQP connection
+     * Open Common connection
      *
      * @return void
      */
@@ -282,7 +282,7 @@ class AMQPService
     }
 
     /**
-     * Close AMQP channel
+     * Close Common channel
      *
      * @return void
      */
@@ -295,7 +295,7 @@ class AMQPService
     }
 
     /**
-     * Close AMQP connection
+     * Close Common connection
      *
      * @return void
      * @throws \Throwable

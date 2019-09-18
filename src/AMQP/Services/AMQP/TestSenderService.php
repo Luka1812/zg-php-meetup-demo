@@ -2,7 +2,7 @@
 
 namespace App\Services\AMQP;
 
-use App\Support\AMQP\AMQPService;
+use App\AMQP\Common\AMQPService;
 use App\Services\Business\TestSendService;
 use App\Mapper\Mapper;
 

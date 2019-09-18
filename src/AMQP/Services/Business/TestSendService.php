@@ -2,7 +2,7 @@
 
 namespace App\Services\Business;
 
-use App\Support\AMQP\AMQPSendMessageInterface;
+use App\AMQP\Common\AMQPConsumeMessageInterface;
 
 class TestSendService implements AMQPSendMessageInterface
 {
