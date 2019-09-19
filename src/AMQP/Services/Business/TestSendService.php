@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Services\Business;
+namespace App\AMQP\Services\Business;
 
-use App\AMQP\Common\AMQPConsumeMessageInterface;
+use App\AMQP\Common\AMQPSendMessageInterface;
 
 class TestSendService implements AMQPSendMessageInterface
 {
@@ -13,5 +13,7 @@ class TestSendService implements AMQPSendMessageInterface
     public function process(array $message) : array
     {
         // TODO: Implement process() method.
+
+        return $message;
     }
 }

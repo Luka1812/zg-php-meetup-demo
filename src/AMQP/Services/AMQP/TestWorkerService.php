@@ -1,23 +1,23 @@
 <?php
 
-namespace App\Services\AMQP;
+namespace App\AMQP\Services\AMQP;
 
 use App\AMQP\Common\AMQPService;
-use App\Services\Business\TestConsumeService;
+use App\AMQP\Services\Business\TestConsumeService;
 
 class TestWorkerService
 {
     /**
      * The TestConsumeService instance
      *
-     * @var \App\Services\Business\TestConsumeService
+     * @var \App\AMQP\Services\Business\TestConsumeService
      */
     private $testService;
 
     /**
      * Create a new console command instance.
      *
-     * @param \App\Services\Business\TestConsumeService $testService
+     * @param \App\AMQP\Services\Business\TestConsumeService $testService
      */
     public function __construct(TestConsumeService $testService)
     {
@@ -33,10 +33,10 @@ class TestWorkerService
     {
         $AMQPService = new AMQPService();
 
-        $AMQPService->setQueueName("TEST");
-        $AMQPService->setExchangeName("TEST");
-        $AMQPService->setExchangeType("TEST");
-        $AMQPService->setConsumerTag("TEST");
+        $AMQPService->setQueueName("queue-name");
+        $AMQPService->setExchangeName("exchange-name");
+        $AMQPService->setExchangeType("exchange-type");
+        $AMQPService->setConsumerTag("consumer-tag");
         $AMQPService->open();
 
         $AMQPService->consume($this->testService);

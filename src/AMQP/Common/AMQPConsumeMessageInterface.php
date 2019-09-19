@@ -11,5 +11,5 @@ interface AMQPConsumeMessageInterface
      *
      * @param \PhpAmqpLib\Message\AMQPMessage $message
      */
-    public function process(AMQPMessage $message);
+    public function process(AMQPMessage $message) : void;
 }
