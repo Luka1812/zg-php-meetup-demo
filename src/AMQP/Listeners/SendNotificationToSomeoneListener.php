@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Listeners\ProcessEngine;
+namespace App\AMQP\Listeners;
 
 use App\AMQP\Events\NotifySomeoneEvent;
 use App\AMQP\Common\AMQPService;

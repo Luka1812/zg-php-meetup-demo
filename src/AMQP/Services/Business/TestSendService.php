@@ -12,7 +12,7 @@ class TestSendService implements AMQPSendMessageInterface
      */
     public function process(array $message) : array
     {
-        // TODO: Implement process() method.
+        // TODO: implement business logic.
 
         return $message;
     }

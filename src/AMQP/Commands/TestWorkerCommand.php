@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Console\Commands\Test;
+namespace App\AMQP\Commands;
 
-use App\Services\AMQP\TestWorkerService;
+use App\AMQP\Services\Worker\TestWorkerService;
 use Exception;
 
 class TestWorkerCommand
@@ -30,7 +30,7 @@ class TestWorkerCommand
     /**
      * Create a new console command instance.
      *
-     * @param \App\Services\OneView\TestWorkerService $testWorkerService
+     * @param \App\AMQP\Services\Worker\TestWorkerService
      * @return void
      */
     public function __construct(TestWorkerService $testWorkerService)

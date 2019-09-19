@@ -1,6 +1,6 @@
 <?php
 
-namespace App\AMQP\Services\AMQP;
+namespace App\AMQP\Services\Worker;
 
 use App\AMQP\Common\AMQPService;
 use App\AMQP\Services\Business\TestConsumeService;
