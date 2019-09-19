@@ -18,6 +18,6 @@ class TestConsumeService implements AMQPConsumeMessageInterface
 
         // TODO: implement business logic.
 
-        // TODO: fire event NotifySomeoneEvent
+        // TODO: fire event NotifySomeoneEvent($message)
     }
 }
